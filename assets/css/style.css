@@ -53,13 +53,6 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
-    border-radius: 15px;
-    text-shadow: none;
-}
-
 /* Hero Style Start */
 
 .hero-form h3 {
@@ -101,10 +94,11 @@ margin: 0;
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    width: 40%;
     margin: 3.5%;
+    width: 40%;
     text-shadow: 0 0 10px rgba(252, 225, 256, 0.8);
     border-radius: 15px;
+    align-items: flex-start;
 }
 
 .hero {
@@ -147,7 +141,6 @@ margin: 0;
 .hero-form button:hover {
     background-color: #39a6b2;
 }
-}
 
 /* secondary page hero */
 
@@ -166,17 +159,38 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* What We Do Section */
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+/* Steps elements */
 .section-title {
-    /* add this alongside your other declarations */
     font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
-    border-color: #fce138;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
-    display: flex;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .primary-border {
@@ -187,21 +201,8 @@ body {
     border-color: #39a6b2;
 }
 
-.step h3 {
-    color: #024e76;
-    font-size: 46px;
-    flex: 1 30%;
-}
-
-.step-text p {
-    color: #39a6b2;
-    font-size: 18px;
-}
-
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
+.steps {
+    background: #fce138;
 }
 
 .step {
@@ -218,8 +219,14 @@ body {
     border-bottom: 1px solid #39a6b2;
 }
 
-.step:not(last-child) {
+.step:not(:last-child) {
     border-bottom: 1px solid #39a6b2;
+}
+
+.step h3 {
+    color: #024e76;
+    font-size: 46px;
+    flex: 1 30%;
 }
 
 .step-info {
@@ -234,21 +241,26 @@ body {
     margin-right: 20px;
 }
 
+.step-text {
+    flex; 12;
+}
+
 .step-img img {
     max-width: 100%;
 }
 
-.step-text {
-    flex: 12;
+.step-text p {
+    color: #39a6b2;
+    font-size: 18px;
 }
 
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    text-align: center
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
 }
+
+/* Trainers section */
 
 .trainers {
     width: 100%;
@@ -290,96 +302,9 @@ body {
     font-size: 17px;
 }
 
-/* REACH OUT STYLES START */
-.contact {
-    background: #024e76;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-}
-
-.contact h2 {
-    color: #fce138;
-}
-
-.contact-info iframe {
-    height: 400px;
-}
-
-.contact-info div {
-    color: white;
-}
-
-.contact-info h3 {
-    color: #fce138;
-    font-size: 16px;
-}
-
-.contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 20px;
-    font-style: normal;
-}
-
-.contact-info a {
-    color: #fce138;
-}
-
-.contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-}
-
-.contact-form button {
-    width: 100%;
-    border: none;
-    background: #fce138;
-    color: #024e76;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-.contact-form button:hover {
-    color: #fce138;
-    background: #39a6b2;
-}
-
-.section-title {
-    font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    margin-bottom: 35px;
-    color: #024e76;
-}
-/* REACH OUT STYLES END */
-
 /* SERVICE STYLES BEGIN */
 .services {
-    background: #fce138;
+    background: #fce138
 }
 
 .service-grid-wrapper {
@@ -387,13 +312,11 @@ body {
     width: 100%;
     justify-content: center;
 }
-
 .service-grid-container {
     background: lightyellow;
     width: 80%;
     display: grid;
-
-/* repeat(iterator, size) */
+    /* repeat(iterator, size) */
     grid-template-columns: 1fr repeat(2, 4fr);
     grid-template-rows: repeat(5, 1fr) 2fr;
     border: 2px solid #024e76;
@@ -431,6 +354,86 @@ body {
     font-weight: bold;
 }
 
+/* REACH OUT STYLES START */
+.contact {
+    background: #024e76;
+}
+
+.contact h2 {
+    color: #fce138;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.contact-info iframe {
+    height: 400px;
+}
+
+.contact-info div {
+    color: white;
+}
+
+.contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.contact-info a {
+    color: #fce138;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form input:hover {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+
+.contact-form textarea:focus {
+    background: #39a6b2;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
+/* REACH OUT STYLES END */
 
 footer {
     background: #fce138;
@@ -474,7 +477,7 @@ footer a {
         justify-content: center;
         position: relative;
     }
-
+    
     header h1 {
         width: 100%;
         text-align: center;
@@ -490,16 +493,19 @@ footer a {
         font-size: 20px;
     }
 
-    footer h2, footer div {
-        text-align: center;
-        width: 100%;
+    header nav ul li a:hover {
+        background: #fce138;
+        color: #024e76;
+        border-radius: 15px;
+        text-shadow: none;
+    }
     }
 
     .hero-cta, .hero-form {
         width: 100%;
     }
-
-    .hero.cta {
+    
+    .hero-cta {
         text-align: center;
     }
 
@@ -515,11 +521,14 @@ footer a {
         flex: 1 100%;
     }
 
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
     section {
         padding: 30px 15px;
     }
@@ -528,7 +537,7 @@ footer a {
         flex: 1 100%;
         text-align: center;
     }
-    
+
     .step-info {
         flex: 2 100%;
         text-align: center;
@@ -568,7 +577,6 @@ footer a {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
     .hero-form button {
         width: 100%;
     }
@@ -596,5 +604,5 @@ footer a {
     .contact-form {
         order: 3;
     }
-    
 }
+

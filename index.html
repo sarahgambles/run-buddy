@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0" />
         <title>Run Buddy</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
 
@@ -28,10 +29,11 @@
                     <a href="#your-trainers">Your Trainers</a>
                 </li>
                 <li>
+                    <a href="#service-plans">Service Plans</a>
+                </li>
+                <li>
                     <a href="#reach-out">Reach Out</a>
                 </li>
-                <a href="#service-plans">Service Plans</a>
-            </ul>
         </nav>
         </header>
 
@@ -60,16 +62,20 @@
                     <input type="tel" placeholder="Phone number" name="phone" id="phone" class="form-input" />
                     <p>
                         Have you worked out with a trainer before?
+                        <span class="radio-wrapper">
                         <input type="radio" name="trainer-confirm" id="trainer-yes" />
                         <label for="trainer-yes">Yes</label>
                         <input type="radio" name="trainer-confirm" id="trainer-no" />
                         <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     <p>
+                        <span class="checkbox-wrapper">
                         <label for="checkbox" >
                             I acknowledge that I am at least 18 years of age.
                         </label>
                         <input type="checkbox" name="age-confirm" id="checkbox" />
+                        </span>
                     </p>
                     <button type="submit">
                         Get running!
@@ -81,63 +87,63 @@
 
         <!-- Wrap every h2 with a class of "section-title" in this div! -->
         <!-- "what we do" section -->
-        <section id="what we do" class="intro">
+        <section id="what-we-do" class="intro">
             <div class="flex-row">
-            <h2 class="section-title primary-border">
-                What We Do
-            </h2>
+            <h2 class="section-title primary-border">What We Do</h2>
             </div>
-            <div class="flex-row">
+            <div class="flex-row"></div>
             <p>
                 butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
             </p>
-            </div>
         </section>
 
         <!-- "what you do" section -->
-        <section id="what you do" class="steps">
-            <div class="flex-row:">
-            <h2 class="section-title primary-border">
+        <section id="what-you-do" class="steps">
+            <div class="flex-row">
+            <h2 class="section-title secondary-border">
                 What You Do
             </h2>
-            
-                <!-- insert this img element -->
-                
-                <div class="step">
+
+        <!-- Steps elements -->
+            <div class="step">
                 <h3>Step 1.</h3>
                 <div class="step-info">
                     <div class="step-img">
                     <img src="./assets/images/step-1.svg" alt="" />
-                    </div>
-                    <div class="step-text">
-                        <h4>Fill out The Form Above</h4>
+                </div>
+                <div class="step-text">
+                    <h4>Fill Out The Form Above</h4>
                 <p>You're already here, so why not?</p>
+            </div>
+            </div>
             </div>
 
             <div class="step">
                 <h3>Step 2.</h3>
-                <div class="step-infor">
+                <div class="step-info">
                     <div class="step-img">
                         <img src="./assets/images/step-2.svg" alt="" />
                     </div>
                 <div class="step-text">
                     <h4>Consult With One of Our Trainers.</h4>
-                    <p>Are you here to build muscle, lose weight, or just feel good?</p>
-                </div>
-                </div>
+                <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            </div>
+            </div>
             </div>
 
             <div class="step">
                 <h3>Step 3.</h3>
-                <div class="step-img">
-                    <img src="./assets/images/step-3.svg" alt="" />
-                </div>
-            <div class="step-text">
-                <h4>Get Running.</h4>
-                <p>Hit the ground running(literally) once your trainer lays out your plan.</p>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-3.svg" alt="" />
+                        </div>
+                    <div class="step-text">
+                        <h4>Get Running.</h4>
+                    </div>
+                <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
             </div>
             </div>
-        </div>
+            </div>
 
             <div class="step">
                 <h3>Step 4.</h3>
@@ -147,12 +153,13 @@
                     </div>
                 <div class="step-text">
                     <h4>See Results.</h4>
+                </div>
                 <p>Bi-weekly checkins with your trainer will keep you focused.</p>
             </div>
             </div>
-            </div>
 
-        </section>
+            </section>
+
 
         <!-- "meet the trainers" section -->
         <section id="your-trainers">
@@ -162,6 +169,7 @@
             </h2>
             </div>
 <div class="trainers">
+
     <!-- This is for the trainer articles -->
         <!-- "first trainer bio" --> 
             <article class="trainer">
@@ -178,7 +186,8 @@
 
         <!-- "second trainer bio" -->
         <article class="trainer">
-            <div class="trainer-bio text-right">
+            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout." />
+            <div class="trainer-bio">
                 <h3 class="trainer name">Joanna Gill</h3>
                 <h4 class="trainer-role">Endurance</h4>
                 <p>
@@ -186,13 +195,12 @@
                     itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
                 </p>
             </div>
-            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout." />
         </article>
 
         <!-- "third trainer bio" -->
         <article class="trainer">
             <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
-            <div class="trainer-bio text-left">
+            <div class="trainer-bio">
                 <h3 class="trainer-name">Harry "the Headband" Smith</h3>
                 <h4 class="trainer-role">Strength</h4>
                 <p>
@@ -206,67 +214,69 @@
 
         </section>
 
-        <!-- "reach out" section -->
-<section id="service-plans" class="services">
-  <h2 class="section-title secondary-border">
-      Our Service Plans 
-  </h2>
-  <div class="service-grid-wrapper">
-      <div class="service-grid-container">
-      </div> <!-- div service-grid-containt -->
-  </div> <!-- div service-grid-wrapper -->
-  <!-- Headers -->
-  <div class="service-grid-item grid-head basic">
-      Basic
-  </div>
-  <div class="service-grid-item grid-head premium">
-      Premium
-  </div>
+        <section id="service-plans" class="services">
+            <h2 class="section-title secondary-border">
+                Our Service Plans
+            </h2>>
+            <div class="service-grid-wrapper">
+                <div class="service-grid-container">
+                
+                <!-- Headers -->
+                <div class="service-grid-item grid-head basic">
+                    Basic
+                </div>
+                <div class="service-grid-item grid-head premium">
+                    Premium
+                </div>
 
-  <!-- Body -->
-  <div class="service-grid-item grid-price basic">
-    Support Offered Between 9-5
-  </div>
+                <!-- Body -->
+                <div class="service-grid-item basic">
+                    Support Offered Between 9-5
+                </div>
 
-  <div class="service-grid-item grid-price premium">
-    24/7 Plan Support
-  </div>
+                <div class="service-grid-item premium">
+                    24/7 Plan Support
+                </div>
 
-  <div class="service-grid-item basic">
-      Bi-Weekly Trainer Calls
-  </div>
+                <div class="service-grid-item basic">
+                    Bi-Weekly Trainer Calls
+                </div>
 
-  <div class="service-grid-item premium">
-      Weekly Trainer Calls
-  </div>
+                <div class="service-grid-item premium">
+                    Weekly Trainer Calls
+                </div>
 
-  <div class="service-grid-item basic">
-      N/A
-  </div>"
+                <div class="service-grid-item basic">
+                    N/A
+                </div>
 
-  <div class="service-grid-item premium">
-      Discounts At Select Running Stores
-  </div>
+                <div class="service-grid-item premium">
+                    Discounts At Select Running Stores
+                </div>
 
-  <div class="service-grid-item both">
-        Subscription to Run Buddy's Health Magazine!
-  </div>
+                <div class="service-grid-item both">
+                    Subscription to Run Buddy's Health Magazine!
+                </div>
 
-  <div class="service-grid-item basic">
-      $10/mo
-</div>
+                <div class="service-grid-item grid-price basic">
+                    $10/mo
+                </div>
 
-<div class="service-grid-item premium">
-      $25/mo
-</div>
+                <div class="service-grid-item grid-price premium">
+                    $25/mo
+                </div>
 
-<div class="service-grid-item cancel">
-      Cancel At Any Time!
-</div>
+                <div class="service-grid-item cancel">
+                    Cancel At Any Time!
+                </div>
 
-</section>
+                </div> <!-- div service-grid-container -->
+            </div> <!-- div service-grid-wrapper -->
+        </section>
 
+<!-- "reach out" section -->
 <section id="reach-out" class="contact">
+    <h2 class="section-title secondary-border">Reach Out</h2>
 <div class="contact-info">
     <div>
         <h3>Run Buddy</h3>
@@ -275,43 +285,39 @@
             <br />
             Let us know and we'll be happy to talk to you!
         </p>
-
-        <address>
-            55 Main Street <br />
-            Some Town, CA <br />
-            12345 <br />
-            P: <a href="tel:555.786.2839">555.RUN.BUDZ (555.786.2839)</a><br />
-            E: <a href="mailto://info@runbuddy.io">info@runbuddy.io</a>
-        </address>
-
+    <address>
+        55 Main Street <br />
+        Some Town, CA <br />
+        12345<br />
+        P: 555.RUN.BUDZ (555.786.2839)<br/>
+        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+    </address>
     </div>
 
     <div class="contact-form">
         <h3>Contact Us</h3>
         <form>
-        <label for="contact-name">Your Name</label>
-        <input type="text" id="contact-name" placeholder="Your Name" />
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" />
+            
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
 
-        <label for="contact-message">Message</label>
-        <textarea id="contact-message" placeholder="Message"></textarea>
-
-        <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.610022184521!2d-111.88870428470786!3d40.50600587935491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875287340bc80ae9%3A0x241f88316b072436!2s13500%20Lone%20Point%20Ln%2C%20Draper%2C%20UT%2084020!5e0!3m2!1sen!2sus!4v1596654489856!5m2!1sen!2sus" 
-                frameborder="0"
-                height="400"
-                width="400"
-                style="border:0"
-                allowfullscreen
-                >
-            
-            </iframe>"
-            
-        </div>
 
-    </section>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.61002218452!2d-111.88870428414356!3d40.50600587935493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875287340bc80ae9%3A0x241f88316b072436!2s13500%20Lone%20Point%20Ln%2C%20Draper%2C%20UT%2084020!5e0!3m2!1sen!2sus!4v1596820655474!5m2!1sen!2sus" 
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+        >
+    </iframe>
+    </div>
+
+</section>
+
 
     <!-- footer --> 
     <footer>
