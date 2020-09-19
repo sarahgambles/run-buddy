@@ -1,0 +1,25 @@
+h1 {text-align: center}
+
+#first {color: red}
+
+#second {color: blue}
+
+#third {color: green}
+
+#fourth {font-size: 40px}
+
+#fifth {font-size: 8px}
+
+#sixth {text-align: center}
+
+#seventh {font-weight: bold}
+
+#eighth {font-family: Helvetica}
+
+.multiple {font=size: 40px; color: orange; font-weight: bold}
+
+.styledFont {font-family: cursive}
+
+. {font-family: Impact, sans-serif, lucida, arial, helvetica}
+
+#styledImage {border-style: dotted; border-width: thick; border-color: purple}
