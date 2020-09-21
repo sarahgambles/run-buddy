@@ -1,0 +1,124 @@
+header {
+    padding: 8px 10px;
+    background-color: #613a43;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.intro {
+    width: 100%;
+    grid-column: 1 / span 1;
+    grid-auto-flow: dense;
+
+    }
+
+.intro img { 
+}
+
+/* HERO SECTION */
+    
+.hero {
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* WORK GRID SECTION */
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, minmax(25px, auto)); 
+    max-width: 940px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: space-evenly;
+}
+
+.work-grid-item {
+    background-color: #8a546d;
+    border: solid;
+    color: #849974;
+    padding: 1em;
+    
+}
+
+/* CONTACT SECTION */
+.contact-me {
+    color: #8a546d;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-me address {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #849974;
+}
+
+/* footer section */
+
+footer {
+    background: #613a43;
+    width: 100%;
+    padding: 15px 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+    
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
+

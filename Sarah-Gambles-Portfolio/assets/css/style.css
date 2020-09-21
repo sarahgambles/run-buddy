@@ -50,9 +50,9 @@
 }
 
 .btn {
-    background-color: #096562;
+    background-color: #CB3D3D;
     color: white;
-    text-shadow: 1px 1px #249EA2;
+    font-weight: bold;
 }
 
 footer {
